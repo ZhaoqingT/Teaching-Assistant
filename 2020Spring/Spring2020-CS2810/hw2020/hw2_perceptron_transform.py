@@ -28,6 +28,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math
+
 
 np.set_printoptions(precision=2)
 
@@ -176,7 +178,10 @@ def stop_norm(w, w_old):
         stop (bool): boolean, True indicates that training should stop
     """
     # your code here
-    
+    Norm_w = np.linalg.norm(w)
+    Norm_w_old = np.linalg.norm(w_old)
+    if (Norm_w - Norm_w_old)/Norm_w_old < 0.01:
+        return True
     # this is a placeholder, will always stop
     return False
     
@@ -191,7 +196,13 @@ def stop_angle(w, w_old):
         stop (bool): boolean, True indicates that training should stop
     """
     # your code here
-    
+    Norm_w = np.linalg.norm(w)
+    Norm_w_old = np.linalg.norm(w_old)
+    Unit_w = w / Norm_w
+    Unit_w_old = w_old / Norm_w_old
+    angle = np.arccos(np.clip(np.dot(Unit_w, Unit_w_old), -1.0, 1.0))
+    if angle > 0.01:
+        return True
     # this is a placeholder, will always stop
     return False
     
@@ -221,7 +232,7 @@ while True:
     print(f'w: {w}')
     
     # HINT: you may want to replace stop_norm() with stop_angle()
-    if stop_norm(w_old, w):
+    if stop_angle(w_old, w):
         print('Stop Training')
         break
         
@@ -259,8 +270,8 @@ p22 = """ insert answer here """
 
 from math import sin, cos, pi
 
-# A = 
-# B = 
+A = np.array([[1,0,0],[0,2,0],[0,0,100]])
+B = np.array([[cos(pi/4), -sin(pi/4)],[sin(pi/4), cos(pi/4)]])
 
 
 # Here are some test cases with expected behavior.  If the matrices for A, B are correct, these won't throw an error.
@@ -272,14 +283,13 @@ from math import sin, cos, pi
 # they will throw errors if your solution is wrong. 
 # uncomment to use them
 
-# x = np.array([1, 1, 1])
-# Ax_expected = np.array([1, 2, 100])
-# np.testing.assert_array_almost_equal(A @ x, Ax_expected)
+x = np.array([1, 1, 1])
+Ax_expected = np.array([1, 2, 100])
+np.testing.assert_array_equal(A @ x, Ax_expected)
 
-# x = np.array([1, 1])
-# Bx_expected = np.array([0, np.sqrt(2)])
-# np.testing.array_equal(B @ x, Bx_expected)
-
+x = np.array([1, 1])
+Bx_expected = np.array([0, np.sqrt(2)])
+np.testing.assert_array_equal(B @ x, Bx_expected)
 
 # ## Transformations and the Linear Perceptron
 # 
