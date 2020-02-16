@@ -1,0 +1,28 @@
+Part A:
+(1 pt) describe span of A as whole 2d plane
+(1 pt) describe span of B as a 1d line (-1/2 pt for describing wrong line, no loss of credit for not specifying line)
+(1 pt) linear dependence causes B to only span a line
+
+Part B:
+(1 pt) describe span of C as whole 3d volume
+(1 pt) describe span of D as a 2d plane within 3d volume (no need to specify plane)
+(2 pt) D is only 2d because its columns are linearly dependent
+
+Part C:
+(1 pt) E is a 3x3 matrix
+(1 pt) rank of E is not 3
+(1 pt) rank of E is 2
+
+basis of null space
+(1 pt) row reducing E
+(2 pt) identifying [1 -2 1] as basis vector (or any multiple)
+
+basis of column space
+(2 pts) identifying column vectors of E as basis of column space
+(1 pt) expressing as a matrix appropriately
+
+Evaluate if each of the plots represent the span of the bases the student gives.  If a correct picture of an incorrect basis is given, then full credit should be earned for the plot.  However, remove a point if the dimensionality of the plot doesn't match what it should (the null space should be 1d and the column space should be 2d).
+
+(.5 pt) any scatter plot
+(2 pt) scatter plot corresponds to given basis
+(2 pt) red vector shown consistent with basis
