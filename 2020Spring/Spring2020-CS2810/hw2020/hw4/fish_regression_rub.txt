@@ -1,0 +1,17 @@
+part A (6 pts):
+-2 pts per defining A, p, x respectively.  Only -1 if student shows the proper intent in defining A (a column of ones appended with the vector a2) but struggles with the python syntax.
+
+part B (2 pts):
+-1 pt per estimate.  Only -1 total if student shows an understanding of the meaning of x_perch (first val is y-intercept, second is slope)
+
+part C (2 pts):
+-1 pt extrapolation is less reliable than interpolation
+-1 pt "model observes similar fish to estimate so we trust it" or similar
+
+note that our solution is written to explain things to students clearly.  We do not expect students to have to produce as precise or complete language to receive full credit here.
+
+part D (4 pts):
+-1 pt A, p, x
+-1 pt demonstrate the idea (with correct or incorrect code or comments) that we're applying logs and exponentials to data before and after we fit a line to make it linear
+-1 pt # cast your problem as a linear fit
+-1 pt # convert x and b back from 'log space'
