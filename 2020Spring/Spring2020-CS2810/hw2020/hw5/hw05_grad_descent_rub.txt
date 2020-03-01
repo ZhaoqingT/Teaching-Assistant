@@ -1,0 +1,44 @@
+part A: 
+1 pt for derivative
+1 pt for all roots
+-1 arithmatic errors
+
+part B:
+1 pt for each function.  
+-1 for python errors where math is correct
+
+part C:
+1 pt any plot with both functions shown (correct values or not).  
+1 pt for legend shown with correct labels. 
+- .5 for swapping labels
+
+part D:
+1 pt "x +/- gradient" in any form.  
+.5 pt, subtracting gradient. 
+.5 pt, scaling gradient by learn_rate
+
+part E:
+2 pt: loop which takes 4 gradient descent steps
+1 pt: print pts to command line (in order)
+1 pt: plot which shows grad descent steps and function
+NOTE: students may struggle with python structure here, please be specific with your feedback so that they learn programming structure
+
+part F: 
+1 pt: we haven't reached the global min of f.  
+1 pt: point for any correct ideas about how we might change parameters to head to the global minimum.  We're looking to encourage students to play with the graph they just created.  
+
+part G:
+2 pts for each function
+-1 or -.5 for python errors
+
+part H:
+1 pt "x +/- gradient" in any form.  
+.5 pt, subtracting gradient.  
+.5 pt, scaling gradient by learn_rate
+
+part G (... the second one):
+2 pt: loop which takes 4 gradient descent steps
+1 pt: print pts to command line (in order)
+1 pt: plot which shows grad descent steps and function
+NOTE: again, students may struggle with python structure here, please be specific with your feedback so that they learn programming structure
+
